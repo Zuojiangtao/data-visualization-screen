@@ -30,11 +30,6 @@ const getters = {
   userInfo: state => state.user.userInfo,
   userAvatar: state => state.user.userInfo.icon,
   userName: state => state.user.name,
-  // multiTab
-  keepAlive: state => state.multiTabs.keepAlive,
-  activeTabList: state => state.multiTabs.activeTabList,
-  activeFullPath: state => state.multiTabs.activeFullPath,
-  currentTabActiveKey: state => state.multiTabs.currentTabActiveKey,
   // permission
   routers: state => state.permission.routers,
   addRouters: state => state.permission.addRouters,
@@ -42,20 +37,6 @@ const getters = {
   hasPermission: state => action => {
     // console.log(action, state.user.permissions.find(item => item === action))
     return !!state.permission.permissions.find(item => item === action)
-  },
-  // dictionary
-  dictionary: state => state.dictionary.DICTIONARY_MAP,
-  // 获取指定分类ID的字典数组
-  getDictionaryByClassifyId: state => classifyId => {
-    return state.dictionary.DICTIONARY_MAP[classifyId] || []
-  },
-  // 获取{key: value}形式的字典,可用于获取值对应文本信息
-  getDictionaryMapData: state => (classifyId, key, value) => {
-    const map = {}
-    ;(state.dictionary.DICTIONARY_MAP[classifyId] || []).forEach(item => {
-      map[item[key]] = item[value]
-    })
-    return map
   },
 }
 

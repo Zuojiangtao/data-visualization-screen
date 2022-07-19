@@ -1,94 +1,107 @@
-@import '~ant-design-vue/es/style/themes/default.less';
-
-html,
-body,
-#app,
-#root {
-  height: 100%;
+//  全局样式
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline: none;
+  box-sizing: border-box;
 }
 
-.colorWeak {
-  filter: invert(80%);
-}
-
-.ant-layout.layout-basic {
-  height: 100vh;
-  min-height: 100vh;
-}
-
-canvas {
-  display: block;
+html {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
 }
 
-ul,
-ol {
-  list-style: none;
+a {
+  color: #343440;
+  text-decoration: none;
 }
 
-// 数据列表 样式
-.table-alert {
-  margin-bottom: 16px;
-}
-// 数据列表 操作
-.table-operator {
-  margin-bottom: 18px;
-
-  button {
-    margin-right: 8px;
-  }
-}
-// 数据列表 搜索条件
-.table-page-search-wrapper {
-  .ant-form-inline {
-    .ant-form-item {
-      display: flex;
-      margin-bottom: 24px;
-      margin-right: 0;
-
-      .ant-form-item-control-wrapper {
-        flex: 1 1;
-        display: inline-block;
-        vertical-align: middle;
-      }
-
-      > .ant-form-item-label {
-        line-height: 32px;
-        padding-right: 8px;
-        width: auto;
-      }
-      .ant-form-item-control {
-        height: 32px;
-        line-height: 32px;
-      }
-    }
-  }
-
-  .table-page-search-submitButtons {
-    display: block;
-    margin-bottom: 24px;
-    white-space: nowrap;
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
   }
 }
 
-@media (max-width: @screen-xs) {
-  .ant-table {
-    width: 100%;
-    overflow-x: auto;
-    &-thead > tr,
-    &-tbody > tr {
-      > th,
-      > td {
-        white-space: pre;
-        > span {
-          display: block;
-        }
-      }
-    }
+//浮动
+.float-r {
+  float: right;
+}
+
+//浮动
+.float-l {
+  float: left;
+}
+
+// 字体加粗
+.fw-b {
+  font-weight: bold;
+}
+
+//文章一行显示，多余省略号显示
+.title-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bg-color-black {
+  background-color: rgba(19, 25, 47, 0.6);
+}
+
+.bg-color-blue {
+  background-color: #1a5cd7;
+}
+
+.colorBlack {
+  color: #272727 !important;
+
+  &:hover {
+    color: #272727 !important;
+  }
+}
+
+.colorGrass {
+  color: #33cea0;
+
+  &:hover {
+    color: #33cea0 !important;
+  }
+}
+
+.colorRed {
+  color: #ff5722;
+
+  &:hover {
+    color: #ff5722 !important;
+  }
+}
+
+.colorText {
+  color: #d3d6dd !important;
+
+  &:hover {
+    color: #d3d6dd !important;
+  }
+}
+
+.colorBlue {
+  color: #257dff !important;
+
+  &:hover {
+    color: #257dff !important;
   }
 }

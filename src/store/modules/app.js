@@ -17,7 +17,6 @@ import {
   ADD_KEEP_ALIVE_VIEW,
   DEL_KEEP_ALIVE_VIEW,
 } from '@/store/mutation-types'
-import { loadLanguageAsync } from '@/locales'
 
 const app = {
   state: {
@@ -98,19 +97,10 @@ const app = {
     },
   },
   actions: {
-    setLang({ commit }, lang) {
-      return new Promise((resolve, reject) => {
-        const antd = require(`ant-design-vue/es/locale-provider/${lang}`).default
-        commit(APP_LANGUAGE, [lang, antd])
-        loadLanguageAsync(lang)
-          .then(res => {
-            resolve()
-          })
-          .catch(e => {
-            reject(e)
-          })
-      })
-    },
+    // setLang({ commit }, lang) {
+    //   return new Promise((resolve, reject) => {
+    //   })
+    // },
   },
 }
 
