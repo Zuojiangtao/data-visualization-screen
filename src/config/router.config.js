@@ -1,20 +1,13 @@
 // eslint-disable-next-line
-// import { UserLayout, BasicLayout } from '@/layouts'
-// import { bxAnaalyse } from '@/core/icons'
-
-// const RouteView = {
-//   name: 'RouteView',
-//   render: h => h('router-view'),
-// }
+// import { BasicLayout } from '@/layouts'
 
 export const asyncRouterMap = [
   {
     path: '/',
-    name: 'index',
-    component: () => import(/* webpackChunkName: "index" */ '@/views/index'),
+    name: 'home',
+    component: () => import(/* webpackChunkName: "index" */ '@/views/datav/index'),
     meta: {
-      title: '首页',
-      permission: ['dashboard'],
+      title: 'H3C 产业大脑',
     },
   },
   {

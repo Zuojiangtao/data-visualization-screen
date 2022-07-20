@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "keywords": [
-    "vue",
-    "ant-design-vue",
-    "vue2",
-    "admin"
+    "data-visualization",
+    "echarts",
+    "datav",
+    "big-screen",
+    "vue2"
   ],
   "license": "MIT",
   "scripts": {
