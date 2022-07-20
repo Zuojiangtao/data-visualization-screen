@@ -1,11 +1,19 @@
 # DataV-Screen
 
+---
+
+## 数据大屏 | 数据可视化
+
+## Summary
+
+一个基于 Vue2、datav 和 echarts 的数据大屏项目。
+
 ## Project setup
 
 ### Clone repo
 
 ```bash
-git clone --depth=1 http://itgit.h3c.com/Frontend-Ecology/antd-vue2-admin my-project
+git clone --depth=1 https://github.com/Zuojiangtao/data-visualization-screen my-project
 cd my-project
 ```
 
@@ -33,6 +41,14 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
+### 演示
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<img src="/docs/img.png">
+
+<img src="/docs/datav.gif">
+
+### 相关链接
+
+- [DataV](http://datav.jiaminghi.com/)
+- [echarts](https://echarts.apache.org/zh/index.html)
+- [Vue](https://cn.vuejs.org/)
