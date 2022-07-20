@@ -29,7 +29,6 @@ jobs:
         yarn build
     
     - name: Deploy 🚀
-      # 使用别人写好的一个 action
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
