@@ -1,8 +1,16 @@
-# DataV-Screen
+<h1 align="center">DataV-Screen</h1>
 
 ---
 
+<div align="center">
+
 ## 数据大屏 | 数据可视化
+
+[![License](https://img.shields.io/npm/l/package.json.svg?style=flat)](https://github.com/Zuojiangtao/data-visualization-screen/blob/master/LICENSE)
+[![Support Vue Version](https://img.shields.io/badge/Support-Vue2-green?style=flat)](https://github.com/Zuojiangtao/data-visualization-screen/releases/latest)
+[![Travis branch](https://app.travis-ci.com/Zuojiangtao/data-visualization-screen.svg?branch=main)](https://app.travis-ci.com/github/Zuojiangtao/data-visualization-screen)
+
+</div>
 
 ## Summary
 
