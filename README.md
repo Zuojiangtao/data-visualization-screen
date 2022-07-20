@@ -1,7 +1,5 @@
 <h1 align="center">DataV-Screen</h1>
 
----
-
 <div align="center">
 
 ## 数据大屏 | 数据可视化
@@ -49,6 +47,8 @@ yarn lint
 ```
 
 ### 演示
+
+线上地址: [数据大屏](https://zuojiangtao.github.io/data-visualization-screen/)
 
 <img src="/docs/img.png">
 
