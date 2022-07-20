@@ -1,0 +1,40 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout 🛎️
+    - uses: actions/checkout@v3
+      with:
+        persist-credentials: false
+    
+    - uses: actions/setup-node@v2 
+      with:
+        node-version: '14'
+        
+    - name: Build
+        run: |
+          yarn
+          yarn build
+    
+    - name: Deploy 🚀
+      # 使用别人写好的一个 action
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          # 这里的 ACCESS_TOKEN 名字需要和下文中的相对应
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          # 打包后的文件部署到哪个分支上
+          BRANCH: gh-pages
+          # 打包后的文件在哪里
+          FOLDER: dist
