@@ -37,6 +37,7 @@ const assetsCDN = {
 }
 
 const vueConfig = {
+  publicPath: isProd ? '/data-visualization-screen/' : '/',
   configureWebpack: {
     // webpack plugins
     plugins: [
