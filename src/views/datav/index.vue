@@ -1,5 +1,5 @@
 <template>
-  <div id="data-view">
+  <div id="data-view" ref="appRef">
     <dv-full-screen-container>
       <top-header />
 
@@ -53,8 +53,11 @@ import RingBarChart from './components/RingBarChart'
 import BarChart from './components/BarChart'
 import PieChart from './components/PieChart'
 
+import resizeMixins from '@/mixins/resizeMixins'
+
 export default {
   name: 'Index',
+  mixins: [resizeMixins],
   components: {
     topHeader,
     FlylineChart,
@@ -82,6 +85,8 @@ export default {
   height: 100%;
   background-color: #030409;
   color: #fff;
+  transform-origin: left top;
+
   #dv-full-screen-container {
     background-image: url('@/assets/datav/bg.png');
     background-size: 100% 100%;
