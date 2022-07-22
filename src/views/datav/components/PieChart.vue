@@ -46,7 +46,7 @@ export default {
 <style lang="less" scoped>
 .bottom-charts {
   width: 100%;
-  height: calc((100% - 40px) / 3);
+  height: calc((100% - 20px) / 3);
   display: flex;
   position: relative;
   background-color: rgba(6, 30, 93, 0.5);

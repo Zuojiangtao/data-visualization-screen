@@ -46,7 +46,7 @@ export default {
 <style lang="less" scoped>
 .left-chart-1 {
   width: 100%;
-  height: calc((100% - 40px) / 3);
+  height: calc((100% - 20px) / 3);
   display: flex;
   flex-grow: 0;
   flex-direction: column;

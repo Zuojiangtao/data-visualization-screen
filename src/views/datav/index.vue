@@ -1,41 +1,39 @@
 <template>
   <div id="data-view" ref="appRef">
-    <dv-full-screen-container>
-      <top-header />
+    <top-header />
 
-      <div class="main-content">
-        <!-- left -->
-        <div class="block-left-content">
-          <line-bar-chart />
+    <div class="main-content">
+      <!-- left -->
+      <div class="block-left-content">
+        <line-bar-chart />
 
-          <ring-bar-chart />
+        <ring-bar-chart />
 
-          <bar-chart />
-        </div>
-
-        <!-- middle -->
-        <div class="block-middle-content">
-          <!-- middle-top -->
-          <div class="block-top-content">
-            <rose-chart />
-
-            <water-level-chart />
-
-            <!-- <flyline-chart /> -->
-          </div>
-
-          <!-- middle-bottom -->
-          <scroll-board />
-        </div>
-
-        <!-- right -->
-        <div class="block-right-content">
-          <ranking-board />
-
-          <pie-chart />
-        </div>
+        <bar-chart />
       </div>
-    </dv-full-screen-container>
+
+      <!-- middle -->
+      <div class="block-middle-content">
+        <!-- middle-top -->
+        <div class="block-top-content">
+          <rose-chart />
+
+          <water-level-chart />
+
+          <!-- <flyline-chart /> -->
+        </div>
+
+        <!-- middle-bottom -->
+        <scroll-board />
+      </div>
+
+      <!-- right -->
+      <div class="block-right-content">
+        <ranking-board />
+
+        <pie-chart />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -81,22 +79,18 @@ export default {
 
 <style lang="less" scoped>
 #data-view {
-  width: 100%;
-  height: 100%;
-  background-color: #030409;
+  width: 1920px;
+  height: 1080px;
   color: #fff;
+  background-image: url('@/assets/datav/bg.png');
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 0 3px blue;
   transform-origin: left top;
 
-  #dv-full-screen-container {
-    background-image: url('@/assets/datav/bg.png');
-    background-size: 100% 100%;
-    box-shadow: 0 0 3px blue;
-    display: flex;
-    flex-direction: column;
-  }
   .main-content {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 100px);
     flex: 1;
     display: flex;
   }
